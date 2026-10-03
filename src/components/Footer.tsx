@@ -137,8 +137,8 @@ export const Footer: React.FC = () => {
                 </a>
               </div>
               <div>
-                <span className="block text-[11px] text-slate-500 font-medium">Affiliation:</span>
-                <span className="text-slate-300">PixelNoid Digi Academy</span>
+                <span className="block text-[11px] text-slate-500 font-medium">Status:</span>
+                <span className="text-slate-300">Studio IT Independen</span>
               </div>
             </div>
           </div>

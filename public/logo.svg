@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 90" fill="none">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&amp;display=swap');
+      .pixellate-text {
+        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-weight: 700;
+        font-size: 54px;
+        letter-spacing: -0.025em;
+      }
+    </style>
+  </defs>
+
+  <!-- Pixellate Authentic Brand Mark (7 radiating pixel bars sweeping upwards around inner hub) -->
+  <g transform="translate(48, 62)">
+    <!-- Seamless Inner Hub Ring -->
+    <path
+      d="M -16.74 2.95 A 17 17 0 0 1 13.02 -10.93 L 19.92 -16.71 A 26 26 0 0 0 -25.60 4.51 Z"
+      fill="#0068FF"
+    />
+    
+    <!-- 7 Radiating Rectangular Bars: [-100°, -75°, -50°, -25°, 0°, +25°, +50°] -->
+    <g transform="rotate(-100)"><rect x="-3.6" y="-48" width="7.2" height="25" rx="1.4" fill="#0068FF" /></g>
+    <g transform="rotate(-75)"><rect x="-3.6" y="-48" width="7.2" height="25" rx="1.4" fill="#0068FF" /></g>
+    <g transform="rotate(-50)"><rect x="-3.6" y="-48" width="7.2" height="25" rx="1.4" fill="#0068FF" /></g>
+    <g transform="rotate(-25)"><rect x="-3.6" y="-48" width="7.2" height="25" rx="1.4" fill="#0068FF" /></g>
+    <g transform="rotate(0)"><rect x="-3.6" y="-48" width="7.2" height="25" rx="1.4" fill="#0068FF" /></g>
+    <g transform="rotate(25)"><rect x="-3.6" y="-48" width="7.2" height="25" rx="1.4" fill="#0068FF" /></g>
+    <g transform="rotate(50)"><rect x="-3.6" y="-48" width="7.2" height="25" rx="1.4" fill="#0068FF" /></g>
+  </g>
+
+  <!-- Wordmark "Pixellate" -->
+  <text x="108" y="62" fill="#0068FF" class="pixellate-text">Pixellate</text>
+</svg>

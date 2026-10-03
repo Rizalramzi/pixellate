@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import PixellateLogo from './PixellateLogo';
-import { Menu, X, MessageSquare, ArrowUpRight, Sun, Moon } from 'lucide-react';
+import { Menu, X, MessageSquare, ArrowUpRight, Sun, Moon, Bot } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
+import { useChat } from '../context/ChatContext';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { theme, toggleTheme, isDark } = useTheme();
+  const { openChat } = useChat();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,8 +59,8 @@ export const Navbar: React.FC = () => {
             ))}
           </nav>
 
-          {/* Zone 3: Primary Action + Dark Mode Toggle */}
-          <div className="hidden md:flex items-center gap-3">
+          {/* Zone 3: Primary Action + Dark Mode Toggle + Gemini AI Trigger */}
+          <div className="hidden md:flex items-center gap-2.5">
             {/* Dark Mode Toggle Button */}
             <button
               onClick={toggleTheme}
@@ -73,6 +75,17 @@ export const Navbar: React.FC = () => {
               )}
             </button>
 
+            {/* Gemini Chatbot Trigger Button */}
+            <button
+              onClick={openChat}
+              className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold text-[#0068FF] bg-blue-50/80 dark:bg-blue-950/40 border border-blue-200/80 dark:border-blue-900/60 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-all shadow-2xs hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0068FF]"
+              title="Tanya Pixellate AI (Gemini Chatbot)"
+            >
+              <Bot className="w-3.5 h-3.5 text-[#0068FF]" />
+              <span>Tanya AI</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+            </button>
+
             <a
               href="https://wa.me/6289513622252?text=Halo%20Pixellate,%20saya%20ingin%20konsultasi%20mengenai%20proyek%20IT"
               target="_blank"
@@ -80,7 +93,7 @@ export const Navbar: React.FC = () => {
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold text-white bg-[#0068FF] hover:bg-[#0055D6] transition-all shadow-sm hover:shadow active:scale-[0.98] whitespace-nowrap focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0068FF] focus-visible:ring-offset-2"
             >
               <MessageSquare className="w-3.5 h-3.5" />
-              <span>Konsultasi Gratis</span>
+              <span>Konsultasi</span>
               <ArrowUpRight className="w-3.5 h-3.5 opacity-70" />
             </a>
           </div>
@@ -120,7 +133,19 @@ export const Navbar: React.FC = () => {
                 {link.label}
               </a>
             ))}
-            <div className="pt-2">
+            <div className="pt-2 flex flex-col gap-2">
+              <button
+                type="button"
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  openChat();
+                }}
+                className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold text-[#0068FF] bg-blue-50 dark:bg-blue-950/40 border border-blue-200/80 dark:border-blue-900/60 transition-colors"
+              >
+                <Bot className="w-4 h-4" />
+                <span>Tanya Pixellate AI (Gemini Chatbot)</span>
+              </button>
+
               <a
                 href="https://wa.me/6289513622252?text=Halo%20Pixellate,%20saya%20ingin%20konsultasi%20mengenai%20proyek%20IT"
                 target="_blank"

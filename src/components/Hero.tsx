@@ -123,7 +123,7 @@ export const Hero: React.FC = () => {
             {/* Announcement / Pre-launch label */}
             <div className="hero-badge inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 dark:bg-blue-950/40 border border-[#0068FF]/20 dark:border-[#0068FF]/40 text-[#0068FF] dark:text-blue-400 text-xs font-semibold tracking-wide mb-6">
               <span className="w-2 h-2 rounded-full bg-[#0068FF] animate-pulse" />
-              <span>Pixellate by PixelNoid Digi Academy · Pre-Launch</span>
+              <span>Pixellate · IT Project Assistance & Development</span>
             </div>
 
             {/* Main Headline */}

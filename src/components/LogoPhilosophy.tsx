@@ -52,16 +52,16 @@ export const LogoPhilosophy: React.FC = () => {
               {/* Dynamic brand wordmark preview */}
               <div className="space-y-1">
                 <span
-                  className={`block text-3xl sm:text-4xl font-['Righteous'] tracking-tight transition-all duration-300 ${
+                  className={`block text-3xl sm:text-4xl font-['Poppins'] font-bold tracking-tight transition-all duration-300 ${
                     activeTab === 'typography' ? 'text-[#0068FF] scale-110 drop-shadow-md' : 'text-white'
                   }`}
                 >
                   Pixellate
                 </span>
                 <span className="text-xs uppercase tracking-widest text-slate-400 font-medium">
-                  {activeTab === 'symbol' && '7 Code Blocks · Matahari Terbit'}
+                  {activeTab === 'symbol' && '7 Code Blocks · Matahari Terbit & Hub Melingkar'}
                   {activeTab === 'color' && 'Primary Color · #0068FF'}
-                  {activeTab === 'typography' && 'Righteous Rounded + Montserrat'}
+                  {activeTab === 'typography' && 'Poppins Bold Geometric + Montserrat'}
                 </span>
               </div>
 
@@ -177,7 +177,7 @@ export const LogoPhilosophy: React.FC = () => {
                 <div>
                   <div className="flex items-center gap-2 mb-1.5">
                     <h3 className="text-lg font-bold text-slate-900 dark:text-white">
-                      3. Tipografi (Righteous & Montserrat)
+                      3. Tipografi (Poppins Bold & Montserrat)
                     </h3>
                     {activeTab === 'typography' && (
                       <span className="text-[11px] font-semibold text-[#0068FF] dark:text-blue-300 bg-blue-100/70 dark:bg-blue-900/50 px-2 py-0.5 rounded-full">
@@ -186,9 +186,10 @@ export const LogoPhilosophy: React.FC = () => {
                     )}
                   </div>
                   <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                    Font yang digunakan pada kata "Pixellate" memiliki sudut-sudut yang melengkung lembut
-                    (rounded). Memberikan kesan bersahabat <strong className="text-slate-900 dark:text-white">(friendly)</strong>, santai, mudah didekati,
-                    dan tidak kaku agar klien merasa nyaman dan bebas stres saat bekerja sama dengan kami.
+                    Huruf pada kata "Pixellate" menggunakan tipografi geometris modern (Poppins Bold)
+                    dengan proporsi seimbang, sudut presisi, dan dot melingkar sempurna pada huruf "i".
+                    Memberikan kesan profesional, percaya diri, berorientasi masa depan, sekaligus bersahabat
+                    agar klien merasa tenang dan yakin bekerja sama dengan kami.
                   </p>
                 </div>
               </div>

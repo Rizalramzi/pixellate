@@ -4,6 +4,7 @@
 
 @theme {
   --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-poppins: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-righteous: 'Righteous', cursive, sans-serif;
   --color-primary: #0068FF;
   --color-primary-hover: #0055D6;

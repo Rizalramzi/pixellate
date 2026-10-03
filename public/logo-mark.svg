@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <g transform="translate(54, 70)">
+    <!-- Seamless Inner Hub Ring -->
+    <path
+      d="M -16.74 2.95 A 17 17 0 0 1 13.02 -10.93 L 19.92 -16.71 A 26 26 0 0 0 -25.60 4.51 Z"
+      fill="#0068FF"
+    />
+    
+    <!-- 7 Radiating Rectangular Pixel Rays -->
+    <g transform="rotate(-100)"><rect x="-3.6" y="-48" width="7.2" height="25" rx="1.4" fill="#0068FF" /></g>
+    <g transform="rotate(-75)"><rect x="-3.6" y="-48" width="7.2" height="25" rx="1.4" fill="#0068FF" /></g>
+    <g transform="rotate(-50)"><rect x="-3.6" y="-48" width="7.2" height="25" rx="1.4" fill="#0068FF" /></g>
+    <g transform="rotate(-25)"><rect x="-3.6" y="-48" width="7.2" height="25" rx="1.4" fill="#0068FF" /></g>
+    <g transform="rotate(0)"><rect x="-3.6" y="-48" width="7.2" height="25" rx="1.4" fill="#0068FF" /></g>
+    <g transform="rotate(25)"><rect x="-3.6" y="-48" width="7.2" height="25" rx="1.4" fill="#0068FF" /></g>
+    <g transform="rotate(50)"><rect x="-3.6" y="-48" width="7.2" height="25" rx="1.4" fill="#0068FF" /></g>
+  </g>
+</svg>
