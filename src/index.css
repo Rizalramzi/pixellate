@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-righteous: 'Righteous', cursive, sans-serif;
+  --color-primary: #0068FF;
+  --color-primary-hover: #0055D6;
+  --color-primary-light: #F0F6FF;
+  --color-primary-subtle: #E1EFFF;
+}
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Subtle blueprint grid inspired by the official Pixellate presentation pages */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 104, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 104, 255, 0.04) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(0, 104, 255, 0.12) 1px, transparent 1px);
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0068FF;
+}
+
+.dark .bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(0, 104, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 104, 255, 0.08) 1px, transparent 1px);
+}
+
+.dark .bg-dot-pattern {
+  background-image: radial-gradient(rgba(0, 104, 255, 0.2) 1px, transparent 1px);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0b0f19;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #0068FF;
+}
